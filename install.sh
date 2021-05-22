@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-cd $HOME/TELAND
+cd $HOME/KetoTeam
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x TELAND
+chmod +x KetoTeam
 chmod +x Run
 ./Run
 }
