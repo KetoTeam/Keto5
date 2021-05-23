@@ -16,9 +16,9 @@ Source Keto
 io.popen("mkdir File_Bot") 
 io.popen("cd File_Bot && rm -rf commands.lua") 
 io.popen("cd File_Bot && wget https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/File_Bot/commands.lua") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/File_Bot/games.lua") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/File_Bot/all.lua") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/File_Bot/Reply.lua") 
+io.popen("wget https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/File_Bot/games.lua") 
+io.popen("wget https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/File_Bot/all.lua") 
+io.popen("wget https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/File_Bot/Reply.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
