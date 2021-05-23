@@ -3761,7 +3761,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevKetoTeam(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/KetoTeam/Files_KetoTeam/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -3799,7 +3799,7 @@ t = " *⌯︙الملف »* "..file.."\n*⌯︙تم تعطيل ملف* \n"
 else
 t = " *⌯︙بالتاكيد تم تعطيل ملف →* "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/KetoTeam/Files_KetoTeam/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -3819,7 +3819,7 @@ t = " *⌯︙بالتاكيد تم تفعيل ملف →* "..file.." \n"
 else
 t = " *⌯︙الملف »* "..file.."\n*⌯︙تم تفعيل ملف* \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/KetoTeam/Files_KetoTeam/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/KetoTeam/Files_Keto/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
