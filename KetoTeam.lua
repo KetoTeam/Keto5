@@ -2013,9 +2013,9 @@ end
 end
 end
 
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if msg.content_.ID == 'MessagePhoto' and not Manager(msg) then 
 local filter = database:smembers(bot_id.."filterphoto"..msg.chat_id_)
 for k,v in pairs(filter) do
@@ -2032,7 +2032,7 @@ return false
 end
 end
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if msg.content_.ID == 'MessageAnimation' and not Manager(msg) then 
 local filter = database:smembers(bot_id.."filteranimation"..msg.chat_id_)
 for k,v in pairs(filter) do
@@ -3400,7 +3400,7 @@ elseif text == 'فتح التكرار' and Mod(msg) then
 database:hdel(bot_id.."flooding:settings:"..msg.chat_id_ ,"flood")  
 send(msg.chat_id_, msg.id_,' *⌯︙تم فتح التكرار*')
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تحديث' and DevKetoTeam(msg) then
 dofile('KetoTeam.lua')  
 send(msg.chat_id_, msg.id_, ' *⌯︙تم تحديث جميع الملفات*') 
@@ -3700,7 +3700,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == ("مسح المطورين") and DevKetoTeam(msg) then
 database:del(bot_id..'Sudo:User')
 send(msg.chat_id_, msg.id_, "\n *⌯︙تم مسح قائمة المطورين*  ")
@@ -4168,7 +4168,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == ("مسح الاساسين") and CoSu(msg) then
 database:del(bot_id..'Basic:Constructor'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, '\n *⌯︙تم مسح المنشئين الاساسين*')
@@ -4176,7 +4176,7 @@ return false
 end
 if (msg.content_.sticker_)  and msg.reply_to_message_id_ == 0 and database:get(bot_id.."lock:Lock:Xn"..msg.chat_id_)=="del" then  
 sticker_id = msg.content_.sticker_.sticker_.persistent_id_
-st = https.request('https://uuuuu1.ml/Imagelnfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
+st = https.request('https://VVVZVV.ml/Imagelnfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
 eker = JSON.decode(st)
 if eker.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
@@ -4242,7 +4242,7 @@ end
 end
 if (msg.content_.photo_) and msg.reply_to_message_id_ == 0 and database:get(bot_id.."lock:Lock:Xn"..msg.chat_id_)=="del" then
 photo_id = msg.content_.photo_.sizes_[1].photo_.persistent_id_  
-Srrt = https.request('https://uuuuu1.ml/Imagelnfo.php?token='..token..'&url='..photo_id.."&type=photo")
+Srrt = https.request('https://VVVZVV.ml/Imagelnfo.php?token='..token..'&url='..photo_id.."&type=photo")
 Sto = JSON.decode(Srrt)
 if Sto.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
@@ -4440,7 +4440,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'مسح المنشئين' and BasicConstructor(msg) then
 database:del(bot_id..'Constructor'..msg.chat_id_)
 texts = ' *⌯︙تم مسح المنشئين* '
@@ -4545,7 +4545,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text and text:match("^رفع منشئ (%d+)$") and BasicConstructor(msg) then
 local userid = text:match("^رفع منشئ (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
@@ -4638,7 +4638,7 @@ status  = '\n*⌯︙تم تنزيله من المنشئين*'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'مسح المدراء' and Constructor(msg) then
 database:del(bot_id..'Manager'..msg.chat_id_)
 texts = ' *⌯︙تم مسح المدراء* '
@@ -4821,7 +4821,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text ==("رفع الادمنيه") and Manager(msg) then
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 local num2 = 0
@@ -5271,8 +5271,8 @@ end,nil)
 end
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
+------------------------------------------------------------------------ ياسر
 if text == 'مسح المميزين' and Mod(msg) then
 database:del(bot_id..'Special:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم مسح المميزين*')
@@ -5467,7 +5467,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end  
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تنزيل المطايه' and Mod(msg) then
 database:del(bot_id..'Mote:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم مسح جميع المطايه*')
@@ -5605,7 +5605,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 
 if text == ("تاك للحات") and Mod(msg) then
 local list = database:smembers(bot_id..'Modde:User'..msg.chat_id_)
@@ -5623,7 +5623,7 @@ t = " *⌯︙مع الاسف لا يوجد حات*"
 end
 send(msg.chat_id_, msg.id_, t)
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == ("رفع الحات") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -5671,7 +5671,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تنزيل الصخوله' and Mod(msg) then
 database:del(bot_id..'Sakl:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم تنزيل جميع صخوله من الكروب*')
@@ -5741,7 +5741,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تنزيل الجلاب' and Mod(msg) then
 database:del(bot_id..'Motte:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم تنزيل جميع جلاب الكروب*')
@@ -5810,7 +5810,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تنزيل القروده' and Mod(msg) then
 database:del(bot_id..'Motee:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم تنزيل جميع القروده بالكروب*')
@@ -5831,7 +5831,7 @@ t = " *⌯︙لا يوجد قرد*"
 end
 send(msg.chat_id_, msg.id_, t)
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == ("رفع قرد") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -5879,7 +5879,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تنزيل الحصونه' and Mod(msg) then
 database:del(bot_id..'Hors:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم تنزيل جميع الحصونه بالكروب*')
@@ -5900,7 +5900,7 @@ t = " *⌯︙لا يوجد حصان*"
 end
 send(msg.chat_id_, msg.id_, t)
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == ("رفع حصان") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -5948,7 +5948,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تنزيل البقرات' and Mod(msg) then
 database:del(bot_id..'Bakra:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم تنزيل جميع البقرات بالكروب*')
@@ -5969,7 +5969,7 @@ t = " *⌯︙لا يوجد البقره*"
 end
 send(msg.chat_id_, msg.id_, t)
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == ("رفع بقره") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -6017,7 +6017,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تنزيل الطليان' and Mod(msg) then
 database:del(bot_id..'Tele:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم تنزيل جميع طليان بالكروب')
@@ -6086,7 +6086,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تنزيل الزواحف' and Mod(msg) then
 database:del(bot_id..'Zahf:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم تنزيل جميع زواحف*')
@@ -6155,7 +6155,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تنزيل جريذيه' and Mod(msg) then
 database:del(bot_id..'Jred:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم تنزيل جميع جريزي*')
@@ -6224,7 +6224,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'مسح المحظورين' and Mod(msg) then
 database:del(bot_id..'Ban:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, '\n *⌯︙تم مسح المحظورين*')
@@ -6476,7 +6476,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'مسح المكتومين' and Mod(msg) then
 database:del(bot_id..'Muted:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' *⌯︙تم مسح المكتومين*')
@@ -7827,7 +7827,7 @@ sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
 end,nil)
 end
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 
 if text == "تفعيل صورتي" or text == 'تفعيل الصوره' then
 if Constructor(msg) then  
@@ -8113,7 +8113,7 @@ database:del(bot_id..'Set:TEXT_SUDO'..msg.chat_id_..':'..msg.sender_user_id_)
 send(msg.chat_id_,msg.id_,' *⌯︙تم حفظ كليشة المطور*')
 return false
 end
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
 if text == 'تعين الايدي' and Manager(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -9121,8 +9121,8 @@ local photo = database:get(bot_id.."Add:Rd:Sudo:Photo"..text)
 local video = database:get(bot_id.."Add:Rd:Sudo:Video"..text)
 local document = database:get(bot_id.."Add:Rd:Sudo:File"..text)
 local audio = database:get(bot_id.."Add:Rd:Sudo:Audio"..text)
------------------------------------------------------------------------- امـيـر الـدلـيـم
------------------------------------------------------------------------- امـيـر الـدلـيـم
+------------------------------------------------------------------------ ياسر
+------------------------------------------------------------------------ ياسر
 if text1 then 
 send(msg.chat_id_, msg.id_,text1)
 database:sadd(bot_id..'Spam:Texting'..msg.sender_user_id_,text) 
@@ -10755,7 +10755,7 @@ database:set(bot_id.." amir:zhrf_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." amir:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
-zh = https.request('https://uuuuu1.ml/amirZhfa/KetoTeam.php?en='..URL.escape(TextZhrfa)..'')
+zh = https.request('https://VVVZVV.ml/amirZhfa/TELAND.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
 t = "\n*⌯︙قائمه الزخرفه* \nٴ⌯∫ٴ*•━━━━━━ KeTo ━━━━━━━•*ٴ⌯∫○ٴ \n"
 i = 0
@@ -10775,7 +10775,7 @@ database:set(bot_id.." amir:brj_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^برج (.*)$") and database:get(bot_id.." amir:brj_Bots"..msg.chat_id_) == "open" then
 local Textbrj = text:match("^برج (.*)$")
-gk = https.request('https://uuuuu1.ml/amirBrg/KetoTeam.php?br='..URL.escape(Textbrj)..'')
+gk = https.request('https://VVVZVV.ml/amirBrg/TELAND.php?br='..URL.escape(Textbrj)..'')
 br = JSON.decode(gk)
 i = 0
 for k,v in pairs(br.ok) do
@@ -10798,7 +10798,7 @@ database:set(bot_id.." amir:age_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^احسب (.*)$") and database:get(bot_id.." amir:age_Bots"..msg.chat_id_) == "open" then
 local Textage = text:match("^احسب (.*)$")
-ge = https.request('https://uuuuu1.ml/amirOmr/KetoTeam.php?age='..URL.escape(Textage)..'')
+ge = https.request('https://VVVZVV.ml/amirOmr/TELAND.php?age='..URL.escape(Textage)..'')
 ag = JSON.decode(ge)
 i = 0
 for k,v in pairs(ag.ok) do
@@ -10883,7 +10883,7 @@ database:set(bot_id.."AutoFile:Time",os.date("%x"))
 end
 end
 if text == "غنيلي" and not database:get(bot_id.."sing:for:me"..msg.chat_id_) then
-data,res = https.request('https://uuuuu1.ml/amirVois/KetoTeam.php')
+data,res = https.request('https://VVVZVV.ml/amirVois/TELAND.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
@@ -11088,7 +11088,7 @@ end
 if text == "نسبه رجوله" or text == "نسبه الرجوله" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
 if not database:get(bot_id..'Cick:rjo'..msg.chat_id_) then
 database:set(bot_id..":"..msg.sender_user_id_..":rjo_Bots"..msg.chat_id_,"sendrjoe")
-Text = '*ارسل اسم الشخص الذي تريد قياس نسبه رجولته* *\n مثال امير*'
+Text = '*ارسل اسم الشخص الذي تريد قياس نسبه رجولته* *\n مثال ياسر*'
 send(msg.chat_id_, msg.id_,Text) 
 end
 end
